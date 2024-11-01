@@ -1,3 +1,8 @@
+
+![image](https://github.com/user-attachments/assets/6f03abe5-bced-4b7e-b75a-0d2ea46522c1) ![image](https://github.com/user-attachments/assets/93f2e1c9-7d3d-4ce6-ae52-a39d71c1fee2)
+
+
+
 # Transcrição de Áudio e Identificação de Palavras-chave
 
 Este projeto realiza a extração de áudio de um vídeo, transcreve o áudio usando o serviço de reconhecimento de fala da Azure, e identifica momentos específicos em que certas palavras-chave aparecem na transcrição.
