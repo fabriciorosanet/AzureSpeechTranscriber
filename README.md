@@ -10,10 +10,10 @@ Este projeto realiza a extração de áudio de um vídeo, transcreve o áudio us
 
 ## Funcionalidades
 
-- **Extração de áudio**: Converte um arquivo de vídeo em um arquivo de áudio.
-- **Transcrição**: Utiliza a API de reconhecimento de fala da Azure para transcrever o áudio extraído.
-- **Identificação de palavras-chave**: Localiza momentos específicos da transcrição onde palavras-chave são mencionadas.
-- **Salvamento da transcrição**: Salva a transcrição completa e os momentos das palavras-chave em um arquivo de texto.
+- **Extração de áudio**: Converte um arquivo de vídeo em um arquivo de áudio com configurações específicas para transcrição.
+- **Transcrição**: Utiliza a API de reconhecimento de fala da Azure para transcrever o áudio extraído em português.
+- **Identificação de palavras-chave**: Localiza momentos específicos da transcrição onde palavras-chave são mencionadas e calcula um timestamp aproximado.
+- **Salvamento da transcrição**: Salva a transcrição completa e os momentos das palavras-chave em um arquivo de texto para consulta futura.
 
 ## Requisitos
 
@@ -21,6 +21,7 @@ Este projeto realiza a extração de áudio de um vídeo, transcreve o áudio us
 - Bibliotecas Python:
   - `azure-cognitiveservices-speech`
   - `moviepy`
+  - `tkinter `
 - Conta no Azure com a API de reconhecimento de fala habilitada. Você precisará de uma chave de assinatura e da região do serviço.
 
 ## Instalação
@@ -48,8 +49,17 @@ Este projeto realiza a extração de áudio de um vídeo, transcreve o áudio us
     ```bash
         python main.py
 
+## Interface gráfica
+1. Selecione o arquivo de vídeo que deseja processar.
+2. Clique no botão "Process Video" para iniciar o processo de extração, transcrição e identificação das palavras-chave.
+3. Configure as palavras-chave que você deseja identificar diretamente no código (na lista palavras_chave dentro da função process_video).
+
 ## Execução
 Ao executar o script, você verá a transcrição completa do áudio e os momentos das palavras-chave identificadas no console, além de um arquivo de texto contendo essas informações.
+
+## Arquivo de saída
+A transcrição e os momentos das palavras-chave são salvos em um arquivo .txt conforme o caminho especificado (output_txt_path), e o progresso da transcrição é mostrado em uma barra de progresso. (Ainda precisa de ajustes)
+
 
 <h2 id="colab">🤝 Colaboradores</h2>
 
